@@ -28,6 +28,9 @@ public class AutoGroupData
     @Field(type = FieldType.Boolean, name = "schedule")
     private boolean schedule;
 
+    @Field(type = FieldType.Text, name = "groupingStatus")
+    private String groupingStatus;
+
     public boolean isFocus() {
         return focus;
     }
@@ -74,5 +77,13 @@ public class AutoGroupData
 
     public void setNoOfPupilsPerGroup(int noOfPupilsPerGroup) {
         this.noOfPupilsPerGroup = noOfPupilsPerGroup;
+    }
+
+    public String getGroupingStatus() {
+        return groupingStatus;
+    }
+
+    public void setGroupingStatus(String groupingStatus) {
+        this.groupingStatus = groupingStatus;
     }
 }
