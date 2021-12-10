@@ -24,7 +24,7 @@ public class AutoGroupDataController {
         autoGroupDataService.createAutoGroupDataIndex(autoGroupData);
         Thread.sleep(5000);
         AutoGroupData processedAutoGroupData = searchAutoGroupDataById(autoGroupData.getId());
-        if (!(processedAutoGroupData.getGroupingStatus().equals("todo"))) {
+        if (!(processedAutoGroupData.getGroupingStatus().equals("complete"))) {
             Thread.sleep(5000);
             processedAutoGroupData = searchAutoGroupDataById(autoGroupData.getId());
         }
