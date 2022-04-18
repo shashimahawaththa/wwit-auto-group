@@ -20,9 +20,9 @@ public class ElasticsearchClientConfiguration extends AbstractElasticsearchConfi
     public RestHighLevelClient elasticsearchClient ()
     {
         ClientConfiguration.MaybeSecureClientConfigurationBuilder builder = (ClientConfiguration.MaybeSecureClientConfigurationBuilder) ClientConfiguration.builder()
-                .connectedTo("technology-operations-es.jupiter-eck.nonprod.wiley.tools:443")
+                .connectedTo("********-******-es.jupiter-eck.******.****.tools:443")
                 .usingSsl()
-                .withBasicAuth("wwit", "welcome!@#123");
+                .withBasicAuth("*****", "*********");
         final ClientConfiguration clientConfiguration = builder.build();
         return RestClients.create(clientConfiguration).rest();
     }
